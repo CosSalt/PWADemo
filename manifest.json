@@ -1,7 +1,16 @@
 {
+  "name": "First WPA Demo",
+  "short_name": "WPA Demo",
+  "description": "PWA 你值得拥有",
+  "icons": [{
+    "src": "./logo/weibologo.png",
+    "sizes": "606x606",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "browser",
   "scope": "/",
   "start_url": "/"
 }
