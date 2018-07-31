@@ -4,7 +4,7 @@ const staticAssets = [
   './style.css',
   './app.js'
 ]
-
+console.log('sw.js')
 // sw.js 首次被注册时触发
 self.addEventListener('install', async event => {
   const cache = await caches.open('news-static')

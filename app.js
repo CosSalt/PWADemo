@@ -13,10 +13,12 @@ window.addEventListener('load', async e=>{
   })
 
   // 判断浏览器是否支持 serviceWorker
-  if('serviceWorker' in navigator) {
+  const {serviceWorker} = navigator
+  if(serviceWorker) {
     try {
       // 尝试注册serviceWor
-      navigator.serviceWorker.register('sw.js')
+      serviceWorker.register('sw.js')
+      serviceWorker.register('sw1.js')
       console.log('SW registered')
     } catch (err) {
       console.error('SW reg  failed')
